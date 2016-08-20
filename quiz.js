@@ -25,13 +25,7 @@ document.getElementById("grow").addEventListener("click", function(){
     growTree();
 });
 
-document.getElementById('tree-height').addEventListener("keydown", function(){
-    if(window.event.keyCode=='13'){
-        growTree();
-    }
-}, false);
-
-document.getElementById('tree-character').addEventListener("keydown", function(){
+document.body.addEventListener("keydown", function(){
     if(window.event.keyCode=='13'){
         growTree();
     }
